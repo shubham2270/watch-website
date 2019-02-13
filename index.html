@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>    
+<head>
+    <meta charset="utf-8">
+    <title>Timepiece</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body{background-color:; margin:0px;}
+        
+        .container{
+            width: 1080px;
+            margin: auto;
+        }
+    
+        .topbar{
+            width:100%;
+            height:70px;
+            background-color: #3d3d3d;  
+        }
+        
+        .topcol{
+            width:255px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 600px;
+            text-align: center;
+        }
+        
+          /*====STYLE FOR  CART====*/
+        
+        .cartcol{
+            width:50px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 560px;
+            
+        }
+        
+        
+        .itemcol{
+            width:30px;
+            height: 48px;
+            background-color:;
+            float: left;
+            text-align: center;
+            padding-top: 22px;
+        }
+        
+        /*====STYLE FOR NAVIGATION====*/
+        .navback{
+            width:100%;
+            height: 80px;
+            background-color: darkslategrey;
+            background:radial-gradient(#3d3d3d, #242424 60% );
+            
+            
+        }
+        
+        
+        .navigation{
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        .navigation a{
+            font-family: sans-serif;
+            color:slategrey;
+            font-size: 15px;
+            text-decoration: none;
+            margin-left: 60px;
+            transition: .4s;
+            border-bottom: solid #3d3d3d00 2px;
+            border-top: solid #3d3d3d00 2px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            
+            
+            
+        }
+        
+        .navigation a:hover{
+            color: white;
+            border-bottom: solid red 2px;
+            border-top: solid red 2px;
+            padding-bottom: 28px;
+            padding-top: 28px;  
+        }
+        
+        /*===== THIS IS SLIDER====*/
+        .slide {
+                width:100%;
+            overflow: hidden;
+            }
+        .slide1 {
+                width:1920px;
+                height:720px;
+                background-image:url(banner1.jpg);
+                animation: s1 15s infinite;
+                background-repeat: no-repeat;
+
+            }
+            
+            @keyframes s1 {
+                0% {margin-left:0px;}
+                25% {margin-left: 1920px;}
+                50% {margin-left: -1920px;}
+                75% {margin-left: -1920px;}
+                100% {margin-left: 0px;}
+            }
+            
+            .slide2 {
+                width:1920px;
+                height:720px;
+                background-image:url(banner2.jpg);
+                animation: s2 15s infinite;
+                margin-top: -720px;
+            }
+            
+            @keyframes s2 {
+                0% {margin-left: -1920px;}
+                25% {margin-left: 0px;}
+                50% {margin-left: 1920px;}
+                75% {margin-left: -1920px;}
+                100% {margin-left: -1920px;}
+            }
+        
+        .slide3 {
+                width:1920px;
+                height:720px;
+                background-image:url(banner3.jpg);
+                animation: s3 15s infinite;
+                margin-top: -720px;
+            }
+            
+            @keyframes s3 {
+                0% {margin-left: -1920px;}
+                25% {margin-left: -1920px;}
+                50% {margin-left: 0px;}
+                75% {margin-left: 1920px;}
+                100% {margin-left: 1920px;}
+            }
+        
+        .slide4 {
+                width:1920px;
+                height:720px;
+                background-image:url(banner4.jpg);
+                animation: s4 15s infinite;
+                margin-top: -720px;
+            }
+            
+            @keyframes s4
+        {
+                0% {margin-left: -1920px;}
+                25% {margin-left: -1920px;}
+                50% {margin-left: -1920px;}
+                75% {margin-left: 0px;}
+                100% {margin-left: 1920px;}
+            }
+        
+        /*===== STYLE FOR PRODUCTS====*/
+        .col1{
+            position: relative;
+            width:333px;
+            height:333px;
+            display: inline-block;
+            float:  left;
+            background-color: yellow;
+            transition: .4s;
+        }
+        
+        .col1:hover .overlayleft{
+            height:25%;
+            
+            
+            
+        }
+        
+        .col1:hover .overlay{
+            opacity: 1;
+            
+        }
+        
+        .image{
+            display: block;
+            width: 333px;
+            border-bottom: 1px solid #bcbcbc;
+            
+        }
+        
+        .overlay{
+            position: absolute;
+            transition: all .4s ease-in-out;
+           
+          
+        }
+        
+        .overlayleft{
+            height: 0;
+            width: 100%;
+            bottom:0;
+            left: 0;
+            background: #000000a7;
+            overflow: hidden;
+            border-radius: 10px 10px 0px 0px;
+            
+                
+        }
+
+        .name{
+            font-family: sans-serif;
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+           
+        
+        }
+        
+        
+        .price{
+            font-family: serif;
+            font-size: 20px;
+            color: yellowgreen;
+            margin-top: 0px;
+            text-align: center;
+            transition: .1s;
+        }
+        
+        .gap{
+            width: 40px;
+            height: 400px;
+            float: left;
+            
+        }
+        /*====STYLE FOR FOTTER====*/
+        .fotter{
+            width:100%;
+            height:60px;
+            background-color: #3d3d3d;
+            float: left;
+        }
+        
+        
+        .foottext{
+            font-family: sans-serif;
+            color: white;
+            font-size: 12px;
+            margin-left: 85px;
+            display: inline-block;
+            padding-top: 22px;
+            text-align: center;
+        }
+        
+        .copy_col{
+            width: 100%;
+            height: 30px;
+            background-color: #111e4f;
+            float: left;
+        }
+        
+        .copy_text{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 7px;
+        }
+        
+        
+        
+    </style>
+    </head>
+    <body>
+        <!--====TOP BAR & LOGO====-->
+        <div class="topbar">
+            <div class="topcol"><img src="timepiece%20logo.png" width="250px"; style="margin-top: 10px; text-align: center;"></div>
+            <div class="cartcol"><i class="fa fa-shopping-cart" style="font-size: 40px; color: darkgrey; margin-top: 15px;"></i></div><div class="itemcol"><span style="color: yellow;">(0)</span></div>
+        </div>
+        
+        <div class="navback">
+        <div class="container">
+        <!--====NAV BAR====-->
+           
+            <div class="navigation">
+        <a href="HOME.html">HOME</a>
+        <a href="men.html">MEN</a>
+        <a href="WOMEN.HTML">WOMEN</a>
+        <a href="KIDS.html">KIDS</a>
+        <a href="Contact.html">CONTACT</a>
+        <a href="ABOUT.html">ABOUT US</a>
+        </div>
+        </div><!--END OF CONTAINER-->
+        </div>
+        <!--====SLIDER====-->
+        <div class="slide">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+        <div class="slide4"></div>
+        </div>
+        <div class="container">
+            <br><br>
+          <div class="col1"><img src="watch1.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹4,999</div></div></div>
+    
+            
+        <div class="gap"></div>
+        
+        <div class="col1"><img src="watch2.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹5,999</div></div></div>
+        
+    <div class="gap"></div>
+    
+        <div class="col1"><img src="watch3.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹4,599</div></div></div>
+            
+        <div style="width:1px;height: 400px"></div>
+            
+            
+            <!--====SECOND ROW OF PRODUCT====-->
+        <div class="col1"><img src="watch4.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹4,999</div></div></div>
+        
+        <div class="gap"></div>
+      
+        <div class="col1"><img src="watch5.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹4,999</div></div></div>
+            
+            <div class="gap"></div>
+            
+            <div class="col1"><img src="watch6.jpg" alt="img" class="image">
+              <div class="overlay overlayleft">
+                  <div class="name" >UNIQUE WATCHES</div><div class="price">₹4,999</div></div></div>
+    </div><!--END OF CONTAINER-->
+        
+        
+        <!--====FOOTER====-->
+        <div class="fotter">
+       
+            <div class="container">
+           
+        <div class="foottext">SERVICES</div>
+        <div class="foottext">ABOUT US</div>
+        <div class="foottext">CONTACT US</div>
+        <div class="foottext">PAYMENT OPTIONS</div>        
+        <div class="foottext">FAQs</div>
+        <div class="foottext">POLICIES</div>
+        </div> <!--END OF CONTAINER-->       
+</div>
+       
+        <div class="copy_col">
+        <div class="copy_text">&copy; Timepiece 2018</div>
+        </div>
+        
+    </body>
+    </html>

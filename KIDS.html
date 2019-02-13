@@ -1,0 +1,412 @@
+<! DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>MEN WATCH</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      body{margin:0px; background-image: url(kid%20background.jpg);
+        background-attachment: fixed; background-size: cover;
+        }
+            
+        .container{
+            width: 1080px;
+            margin: auto;
+        }
+    
+        .topbar{
+            width:100%;
+            height:70px;
+            background-color: #3d3d3d;  
+        }
+        
+        .topcol{
+            width:255px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 600px;
+            text-align: center;
+        }
+        
+        .cartcol{
+            width:50px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 560px;
+            
+        }
+        
+        .itemcol{
+            width:30px;
+            height: 48px;
+            background-color:;
+            float: left;
+            text-align: center;
+            padding-top: 22px;
+        }
+        
+        /*====STYLE FOR NAVIGATION====*/
+        .navback{
+            width:100%;
+            height: 80px;
+            background-color: darkslategrey;
+            background:radial-gradient(#3d3d3d, #242424 60% );
+            
+            
+        }
+        
+        
+        .navigation{
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        .navigation a{
+            font-family: sans-serif;
+            color:slategrey;
+            font-size: 15px;
+            text-decoration: none;
+            margin-left: 60px;
+            transition: .4s;
+            border-bottom: solid #3d3d3d00 2px;
+            border-top: solid #3d3d3d00 2px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            
+            
+            
+        }
+        
+        .navigation a:hover{
+            color: white;
+            border-bottom: solid red 2px;
+            border-top: solid red 2px;
+            padding-bottom: 28px;
+            padding-top: 28px;  
+        }
+          /*====STYLE FOR MEN BACK====*/  
+            .menback{
+                width:100%;
+                height: 150px;
+                background:linear-gradient(to right,#696700, #7B7900, #969300, #BCB800);
+                float: left;
+            }
+            
+            .mentext{
+                font-family: arial;
+                color: #E9BE00;
+                font-size: 50px;
+                margin-top: 40px;
+                margin-left:;
+                letter-spacing: 5px;
+                animation: text 1.5s 1 ease-in-out;
+                animation-direction: reverse;
+                
+            }
+        
+        @keyframes text{
+            0%{margin-left: 0px;}
+            100%{margin-left: -200px; letter-spacing: 10px; color: yellow;}
+        }
+            
+            .w_back{
+                width:100%;
+                height:400px;
+                float: left;
+                background-color: #817f00;
+                margin-top: 20px;
+            }
+            
+            .item_col{
+                width:333px;
+                height:333px;
+                background-color: #817f00;
+                float: left;
+                margin-top: 35px;
+                
+                
+            }
+        /*STYLE FOR PRICE HOVER*/
+        .box_MEN1{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS1.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom .2s 1 ease-out;
+            
+        }
+        
+        @keyframes zoom{
+            0%{transform: scale(.5);}
+            100%{transform: scale(1);}
+        }
+        
+        .box_men1:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_men2:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_men3:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_men4:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_men5:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_men6:hover{
+            transform: scale(1.08);
+        }
+        
+        .box_MEN2{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS2.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom .4s 1 ease-out;
+            
+        }
+        
+        .box_MEN3{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS3.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom .6s 1 ease-out;
+            
+        }
+        
+        .box_MEN4{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS4.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom .8s 1 ease-out;
+            
+        }
+        
+        .box_MEN5{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS5.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom 1s 1 ease-out;
+            
+        }
+        
+        .box_MEN6{
+            width:333px;
+            height:333px;
+            background-image: url(KIDS6.jpg);
+            display: inline-block;
+            float: left;
+            transition: .4s;
+            overflow: hidden;
+            animation: zoom 1.2s 1 ease-out;
+            
+        }
+        
+        .box1{
+            width:180px;
+            height:333px;
+            background-color: #000000d4;
+            margin-top: 310; 
+            transition: .5s;
+            border-radius: 10px 10px 0px 0px;
+            
+            
+        }
+        
+        .box1:hover{
+            margin-top: 250px;
+            width:333px;   
+        }
+        
+        .box1:hover h3{
+            color: yellow;
+            
+           
+        }
+        
+        .box1 h3{
+            font-family: quicksand;
+            text-align:center;
+            color: white;
+            
+        }
+        
+        .box1 p{
+            font-family: quicksand;
+            color: greenyellow;
+            text-align: left;
+            font-size:22px;
+            transition: .5s;
+            margin-left: 200px;
+           
+           
+        }
+        
+        .box1:hover p{
+            font-family: quicksand;
+            color: greenyellow;
+            margin-left: 100px;
+            font-size:22px;
+            transition: .5s;
+            
+            
+        }
+            
+            .gap{
+                width:40px;
+                height:333px;
+                float: left;
+            }
+        
+         /*====STYLE FOR FOTTER====*/
+        .fotter{
+            width:100%;
+            height:60px;
+            background-color: #3d3d3d;
+            float: left;
+        }
+        
+        
+        .foottext{
+            font-family: sans-serif;
+            color: white;
+            font-size: 12px;
+            margin-left: 85px;
+            display: inline-block;
+            padding-top: 22px;  
+        }
+        
+        .copy_col{
+            width: 100%;
+            height: 30px;
+            background-color: #111e4f;
+            float: left;
+        }
+        
+        .copy_text{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 7px;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <!--====TOP BAR & LOGO====-->
+        <div class="topbar">
+            <div class="topcol"><a href="HOME.html"><img src="timepiece%20logo.png" width="250px"; style="margin-top: 10px; text-align: center;"></a></div>
+            <div class="cartcol"><i class="fa fa-shopping-cart" style="font-size: 40px; color: darkgrey; margin-top: 15px;"></i></div><div class="itemcol"><span style="color: aliceblue;">(0)</span></div>
+        </div>
+        
+        <div class="navback">
+        <div class="container">
+        <!--====NAV BAR====-->
+           
+            <div class="navigation">
+        <a href="HOME.html">HOME</a>        
+        <a href="men.html">MEN</a>
+        <a href="WOMEN.HTML">WOMEN</a>
+        <a href="KIDS.html">KIDS</a>
+        <a href="Contact.html">CONTACT</a>
+        <a href="ABOUT.html">ABOUT US</a>
+        </div>
+        </div><!--END OF CONTAINER-->
+        </div>
+        
+        <!--====MEN WATCH ROW1====-->
+        <div class="menback">
+            <div class="container">
+            <div class="mentext"><b>KIDS'S WATCH</b></div>
+        </div>
+            </div>
+        
+    <div class="w_back">
+        <div class="container">
+            <div class="item_col"><div class="box_MEN1"><div class="box1"><h3>KIDS WATCH
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹4,599</p></div></div></div>
+            
+            
+            
+            <div class="gap"></div>
+            
+            <div class="item_col"><div class="box_MEN2"><div class="box1"><h3>KIDS WATCH 
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹5,999</p></div></div></div>
+            
+            <div class="gap"></div>
+            
+            <div class="item_col"><div class="box_MEN3"><div class="box1"><h3>KIDS WATCH 
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹6,599</p></div></div></div>
+            <div style="width:1px;height: 400px"></div>
+            </div><!--END OF CONTAINER-->
+            </div>
+            
+            <!--====MEN WATCH ROW2====-->
+            <div class="w_back">
+        <div class="container">
+            <div class="item_col"><div class="box_MEN4"><div class="box1"><h3>KIDS WATCH 
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹4,599</p></div></div></div>
+            
+            
+            
+            <div class="gap"></div>
+            
+            <div class="item_col"><div class="box_MEN5"><div class="box1"><h3>KIDS WATCH 
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹5,999</p></div></div></div>
+            
+            <div class="gap"></div>
+            
+            <div class="item_col"><div class="box_MEN6"><div class="box1"><h3>KIDS WATCH 
+                <span class="fa fa-chevron-circle-down"></span></h3><p>MRP ₹6,599</p></div></div></div>
+            <div style="width:1px;height: 400px"></div>
+            </div><!--END OF CONTAINER-->
+            </div>
+        
+        <!--====FOOTER====-->
+        <div class="fotter">
+       
+            <div class="container">
+           
+        <div class="foottext">SERVICES</div>
+        <div class="foottext">ABOUT US</div>
+        <div class="foottext">CONTACT US</div>
+        <div class="foottext">PAYMENT OPTIONS</div>        
+        <div class="foottext">FAQs</div>
+        <div class="foottext">POLICIES</div>
+        </div> <!--END OF CONTAINER-->       
+</div>
+                
+       <div class="copy_col">
+        <div class="copy_text">&copy; Timepiece 2018</div>
+        </div> 
+    </body>
+</html>

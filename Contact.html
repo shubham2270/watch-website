@@ -1,0 +1,306 @@
+<! DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>MEN WATCH</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      body{margin:0px; background-image: url(crumpled-2537807.jpg);
+        background-attachment: fixed; background-size: cover;
+        }
+            
+        .container{
+            width: 1080px;
+            margin: auto;
+        }
+    
+        .topbar{
+            width:100%;
+            height:70px;
+            background-color: #3d3d3d;  
+        }
+        
+        .topcol{
+            width:255px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 600px;
+            text-align: center;
+        }
+        
+        .cartcol{
+            width:50px;
+            height: 70px;
+            background-color:;
+            float: left;
+            margin-left: 560px;
+            
+        }
+        
+        .itemcol{
+            width:30px;
+            height: 48px;
+            background-color:;
+            float: left;
+            text-align: center;
+            padding-top: 22px;
+        }
+        
+        /*====STYLE FOR NAVIGATION====*/
+        .navback{
+            width:100%;
+            height: 80px;
+            background-color: darkslategrey;
+            background:radial-gradient(#3d3d3d, #242424 60% );
+            
+            
+        }
+        
+        
+        .navigation{
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        .navigation a{
+            font-family: sans-serif;
+            color:slategrey;
+            font-size: 15px;
+            text-decoration: none;
+            margin-left: 60px;
+            transition: .4s;
+            border-bottom: solid #3d3d3d00 2px;
+            border-top: solid #3d3d3d00 2px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            
+            
+            
+        }
+        
+        .navigation a:hover{
+            color: white;
+            border-bottom: solid red 2px;
+            border-top: solid red 2px;
+            padding-bottom: 28px;
+            padding-top: 28px;  
+        }
+        
+        /*===STYLE FOR FORM====*/
+        
+        .box_col{
+            width: 1080px;
+            height:600px;
+            background-color: ;
+            float: left;
+            
+        }
+        
+        .box{
+            width:700px;
+            height: 500px;
+            background-color: #3c2d00;
+            float: left;
+            transform: translate(20%, 10%);
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+        
+        .text1{
+            font-family: quicksand;
+            color: white;
+            font-size: 25px;
+            margin-top: 50px;
+            margin-left: 70px;
+            animation: zoom .7s 1;
+        }
+        
+        @keyframes zoom{
+            0%{margin-left: -50px};
+            100%{margin-left: 50px};
+        }
+        
+        .box input[type=text]{
+            width:350px;
+            height:40px;
+            border-radius:100px;
+            border:solid 2px black;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 240px;
+            margin-top: -30px;
+            
+           
+        }
+        
+        .box input[type=email]{
+            width:350px;
+            height:40px;
+            border-radius:100px;
+            border:solid 2px black;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 240px;
+            margin-top: -30px;
+        }
+        
+        .box input[type=number]{
+            width:350px;
+            height:40px;
+            border-radius:100px;
+            border:solid 2px black;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 240px;
+            margin-top: -30px;
+        }
+        
+        .box input[type=text1]{
+            width:350px;
+            height:100px;
+            border-radius:20px;
+            border:solid 2px black;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 240px;
+            margin-top: -50px;
+        }
+        
+        .box input[type=submit]{
+            width:300px;
+            height:50px;
+            border-radius:100px;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 215px;
+            margin-top: 50px;
+            background-color: green;
+            color: white;
+            font-size: 15px;
+            transition: .5s;
+            animation: butn .5s 1;
+        }
+        
+        @keyframes butn{
+            0%{transform: scale(.5)};
+            100%{transform: scale(1)};
+        }
+        
+        .box input[type=submit]:hover{
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        /*====STYLE FOR FOTTER====*/
+        .fotter{
+            width:100%;
+            height:60px;
+            background-color: #3d3d3d;
+            float: left;
+        }
+        
+        
+        .foottext{
+            font-family: sans-serif;
+            color: white;
+            font-size: 12px;
+            margin-left: 85px;
+            display: inline-block;
+            padding-top: 22px;  
+        }
+        
+        .copy_col{
+            width: 100%;
+            height: 30px;
+            background-color: #111e4f;
+            float: left;
+        }
+        
+        .copy_text{
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 7px;
+        }
+        
+        .query{
+            border-radius:100px;
+            border:solid 2px black;
+            padding:0px 10px 0px 10px;
+            transition: 0.8s;
+            float: left;
+            margin-left: 240px;
+            margin-top: -50px;
+        }
+        </style>
+    </head>
+    <body>
+    <!--====TOP BAR & LOGO====-->
+        <div class="topbar">
+            <div class="topcol"><a href="HOME.html"><img src="timepiece%20logo.png" width="250px"; style="margin-top: 10px; text-align: center;"></a></div>
+            <div class="cartcol"><i class="fa fa-shopping-cart" style="font-size: 40px; color: darkgrey; margin-top: 15px;"></i></div><div class="itemcol"><span style="color: aliceblue;">(0)</span></div>
+        </div>
+        
+        <div class="navback">
+        <div class="container">
+        <!--====NAV BAR====-->
+           
+            <div class="navigation">
+        <a href="index.html">HOME</a>        
+        <a href="men.html">MEN</a>
+        <a href="WOMEN.HTML">WOMEN</a>
+        <a href="KIDS.html">KIDS</a>
+        <a href="Contact.html">CONTACT</a>
+        <a href="ABOUT.html">ABOUT US</a>
+        </div>
+        </div><!--END OF CONTAINER-->
+        </div>
+        
+        <div class="container">
+            <div class="box_col">
+        <div class="box">
+            <form>
+            <div class="text1">Your Name</div>
+                <input type="text" placeholder="Full Name">
+                
+                <div class="text1">Email ID</div>
+                <input type="Email" placeholder="Email Address">
+                
+                <div class="text1">Contact no.</div>
+                <input type="number" placeholder="Your Mobile no.">
+                
+                <div class="text1">Your Query</div>
+                <!--<input type="text" placeholder="Your query/suggestion">-->
+                <textarea cols="40" rows="3" class="query"></textarea>
+                
+                <input type="submit">
+            </form>
+            </div>
+        </div>
+            </div>
+        
+        <!--====FOOTER====-->
+        <div class="fotter">
+       
+            <div class="container">
+           
+        <div class="foottext">SERVICES</div>
+        <div class="foottext">ABOUT US</div>
+        <div class="foottext">CONTACT US</div>
+        <div class="foottext">PAYMENT OPTIONS</div>        
+        <div class="foottext">FAQs</div>
+        <div class="foottext">POLICIES</div>
+        </div> <!--END OF CONTAINER-->       
+</div>
+        <div class="copy_col">
+        <div class="copy_text">&copy; Timepiece 2018</div>
+        </div>
+    </body>
+</html>
